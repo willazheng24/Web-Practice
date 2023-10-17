@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Movie Management System</h1>
+    <h3 style="text-align: center;">Options</h3>
+    <div style="margin-left:300px;">
+        <h4>Add Movie</h4>
+        <label for="addMovie1">Title: </label>
+		<input type="text" id="addMovie1" minlength="1" required>
+        <label for="addMovie2">Rating: </label>
+		<input type="text" id="addMovie2" minlength="1" maxlength="3" required>
+        <label for="addMovie3">Have Watched: </label>
+		<input type="text" id="addMovie3" minlength="3" required>
+        <button type="button" width="20px" height="15px">Add</button>
+        <h4>Change Watched</h4>
+        <label for="watched1">Title: </label>
+		<input type="text" id="watched1" minlength="1" required>
+        <button type="button" width="20px" height="15px">Change</button>
+        <h4>Filter Ratings</h4>
+        <label for="filter1">Movies above rating of: </label>
+		<input type="text" id="filter1" minlength="1" maxlength="3" required>
+        <button type="button" width="20px" height="15px">Enter</button>
+    </div>
+    <br></br>
+    <h3 style="text-align: center;">Current Movies</h3>
+    <div class="container" style="display: flex; margin-left:300px;">
+        <li></li> 
+        <p style="align-self: top; margin-right: 20px;">
+            <u>Citizen Kane</u> 
+            <br>  Rating: 4</br>
+        </p>
+        <img src="citizenKane.png" alt="Citizen Kane" width="120px" height="180px">
+        <li style="margin-left:40px"></li> 
+        <p style="align-self: top; margin-right: 20px;">
+            <u>Zootopia</u>
+            <br>  Rating: 3.5</br>
+        </p>
+        <img src="zootopia.jpeg" alt="Citizen Kane" width="120px" height="180px">
+    </div>
+    <script src="script.js"> </script>
+</body>
+</html>
